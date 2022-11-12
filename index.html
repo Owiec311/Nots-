@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<script src="https://kit.fontawesome.com/1ce2d55995.js" crossorigin="anonymous"></script>
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="menu">
-			<h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
-			<div class="menu-buttons">
-				<button class="contact icon"><i class="fa-solid fa-address-card"></i> Kontakt</button>
-				<button class="portfolio icon"><i class="fa-sharp fa-solid fa-briefcase"></i> Portfolio</button>
-				<button class="delete-all icon"><i class="fas fa-trash-alt"></i> Usuń wszystkie</button>
-			</div>
-		</div>
-		<aside>
-			<div class="add">
-				<i class="fa-sharp fa-solid fa-plus"></i>
-			</div>
-			<div class="color-all">
-				<div class="color red"></div>
-				<div class="color blue"></div>
-				<div class="color green"></div>
-				<div class="color purple"></div>
-				<div class="color gold"></div>
-			</div>
-		</aside>
-		<div class="note-area"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1ce2d55995.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+      <div class="menu-buttons">
+        <button class="contact icon">
+          <i class="fa-solid fa-address-card"></i> Kontakt
+        </button>
+        <button class="portfolio icon">
+          <i class="fa-sharp fa-solid fa-briefcase"></i> Portfolio
+        </button>
+        <button class="delete-all icon">
+          <i class="fas fa-trash-alt"></i> Usuń wszystkie
+        </button>
+      </div>
+    </div>
+    <aside>
+      <div class="add">
+        <i class="fa-sharp fa-solid fa-plus"></i>
+      </div>
+      <div class="color-all">
+        <div class="color red"></div>
+        <div class="color blue"></div>
+        <div class="color green"></div>
+        <div class="color purple"></div>
+        <div class="color gold"></div>
+      </div>
+    </aside>
+    <div class="note-area"></div>
 
-		<div class="note-panel">
-			<h2>Dodaj notatkę</h2>
-			<p class="section-name"></p>
+    <div class="note-panel">
+      <h2>Dodaj notatkę</h2>
+      <p class="section-name"></p>
 
-			<label for="text">Wpisz treść notatki</label>
-			<textarea id="text"></textarea>
+      <label for="text">Wpisz treść notatki</label>
+      <textarea id="text"></textarea>
 
-			<p class="error">Uzupełnij wszystkie pola!</p>
+      <p class="error">Uzupełnij wszystkie pola!</p>
 
-			<div class="panel-buttons">
-				<button class="save icon"><i class="fas fa-save"></i> Zapisz</button>
-				<button class="cancel icon"><i class="far fa-window-close"></i> Anuluj</button>
-			</div>
-		</div>
+      <div class="panel-buttons">
+        <button class="save icon"><i class="fas fa-save"></i> Zapisz</button>
+        <button class="cancel icon">
+          <i class="far fa-window-close"></i> Anuluj
+        </button>
+      </div>
+    </div>
+    <div class="popuparea">
+      <button class="exit">x</button>
+      <div class="img-section"></div>
 
-		<script src="main.js"></script>
-	</body>
+      <p class="contact-us">
+        <i class="fa-solid fa-id-card"></i> Skontaktuj się ze mną
+      </p>
+      <ul>
+        Sprawdź gdzie mnie szukać:
+        <li>
+          GitHub
+          <a href="https://github.com/owiec311"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <p class="text-click">Kliknij i sprawdź mojego Githuba</p>
+        </li>
+        <li>
+          Gmail:
+          <a hreft="mailto:owiecwebsite@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <p class="text-click">Kliknij i napisz do mnie</p>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p>Copyright &copy; <span class="footeryears"></span> Kamil Jeka</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
